@@ -16,11 +16,12 @@ header {
     background-color: #000000;
     padding: 5px 0; /* Reduce el padding vertical para hacer el fondo más fino */
     text-align: center;
+    margin-bottom: 0;
 }
 
 /* Estilo para el logo */
 header .logo img {
-    width: 300px; /* Ajusta el tamaño del logo si es necesario */
+    width: 120px; /* Ajusta el tamaño del logo si es necesario */
 }
 
 /* Estilo para la barra de navegación */
