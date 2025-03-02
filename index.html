@@ -4,32 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEFOLCK - Banda de Música</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Bienvenidos a DEFOLCK</h1>
+        <div class="logo">
+            <img src="logo.png" alt="DEFOLCK Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="discografia.html">Discografía</a></li>
-                <li><a href="conciertos.html">Conciertos</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#music">Música</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Acerca de la Banda</h2>
-        <p>DEFOLCK es una banda de música folclórica argentina...</p>
+    <!-- Sección de presentación de la banda -->
+    <section id="about" class="intro">
+        <h1>Bienvenidos a DEFOLCK</h1>
+        <p>DEFOLCK es una banda de música que fusiona ritmos tradicionales con sonidos modernos. Únete a nosotros en este viaje musical único.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 DEFOLCK. Todos los derechos reservados.</p>
+    <!-- Galería de fotos o videos -->
+    <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <div class="images">
+            <img src="foto1.jpg" alt="Imagen 1">
+            <img src="foto2.jpg" alt="Imagen 2">
+            <img src="foto3.jpg" alt="Imagen 3">
+        </div>
+    </section>
+
+    <!-- Discografía -->
+    <section id="music" class="music">
+        <h2>Escucha nuestra música</h2>
+        <p>Descubre nuestras últimas canciones y álbumes.</p>
+        <ul>
+            <li><a href="cancion1.mp3">Canción 1</a></li>
+            <li><a href="cancion2.mp3">Canción 2</a></li>
+            <li><a href="cancion3.mp3">Canción 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Eventos -->
+    <section id="events" class="events">
+        <h2>Próximos Eventos</h2>
+        <p>¡Nos vemos en el escenario! Aquí están nuestras próximas fechas:</p>
+        <ul>
+            <li>Fecha 1 - Lugar</li>
+            <li>Fecha 2 - Lugar</li>
+            <li>Fecha 3 - Lugar</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contacto: contacto@defolck.com</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

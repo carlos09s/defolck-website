@@ -1,11 +1,10 @@
-// Ejemplo básico de JavaScript
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("La página ha cargado correctamente");
+    console.log("Bienvenido a la página de DEFOLCK");
 
-    // Agregar funcionalidad básica (por ejemplo, cambiar el color de fondo)
-    const button = document.getElementById("changeColorButton");
-    if (button) {
-        button.addEventListener("click", function() {
+    // Función simple para cambiar color de fondo
+    const changeColorButton = document.getElementById("changeColorButton");
+    if (changeColorButton) {
+        changeColorButton.addEventListener("click", function() {
             document.body.style.backgroundColor = "#ffcccb";
         });
     }
