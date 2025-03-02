@@ -43,7 +43,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -70,6 +70,15 @@ nav ul li a:hover {
     padding: 50px 20px;
     text-align: justify; /* Justificar el texto */
     margin: 0; /* Elimina el margen para evitar espacios vacíos */
+
+}
+    
+.biography h2 {
+    font-size: 40px; /* Aumentar tamaño del título */
+}
+
+.biography p {
+    font-size: 20px; /* Aumentar tamaño del texto del párrafo */
 }
 
 /* Música */
