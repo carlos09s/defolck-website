@@ -64,23 +64,25 @@ nav ul li a:hover {
     margin: 0; /* Elimina cualquier margen innecesario */
 }
 
-/* Sección de biografía */
+/* Biografía */
 .biography {
-    background-color: #000000;
+    background-color: #8B0000;
     padding: 50px 20px;
-    text-align: justify; /* Justificar el texto */
-    margin: 0; /* Elimina el margen para evitar espacios vacíos */
-
+    text-align: center;
+    margin-top: 100px; /* Da espacio suficiente para el header fijo */
 }
-    
+
 .biography h2 {
-    font-size: 40px; /* Aumentar tamaño del título */
+    font-size: 36px;  /* Cambia el tamaño del título */
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
 }
 
 .biography p {
-    font-size: 15px; /* Aumentar tamaño del texto del párrafo */
+    font-size: 18px;  /* Cambia el tamaño del texto */
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
-
 /* Música */
 .music {
     padding: 50px 20px;
