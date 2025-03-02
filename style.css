@@ -51,38 +51,25 @@ nav ul li a:hover {
     color: #8B0000;
 }
 
+/* Sección de imagen horizontal (reemplazando presentación) */
+#home {
+    width: 100%;
+    height: auto;
+}
+
+#home img {
+    width: 100%; /* Hace que la imagen se ajuste al ancho de la página */
+    height: auto; /* Ajusta la altura de la imagen proporcionalmente */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    margin: 0; /* Elimina cualquier margen innecesario */
+}
+
 /* Sección de biografía */
 .biography {
     background-color: #8B0000;
     padding: 50px 20px;
-    text-align: center;
-    margin-top: 100px; /* Da espacio suficiente para el header fijo */
-}
-
-.biography h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: 'Anton', sans-serif;
-}
-
-.biography p {
-    font-size: 18px;
-    line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
     text-align: justify; /* Justificar el texto */
-}
-
-/* Imagen en lugar de la sección de presentación */
-#home {
-    width: 100%;
-    overflow: hidden;
-}
-
-#home img {
-    width: 100%; /* La imagen ocupará el 100% del ancho */
-    height: auto; /* Mantendrá la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
-    max-height: 500px; /* Ajusta la altura máxima para que no sea demasiado grande */
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
 
 /* Música */
@@ -90,6 +77,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
 
 .music h2 {
@@ -123,6 +111,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
 
 .events h2 {
@@ -148,6 +137,7 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
 
 footer .social {
@@ -191,10 +181,5 @@ footer .social a:hover {
 
     footer {
         font-size: 14px;
-    }
-
-    /* Ajustes para la imagen en móviles */
-    #home img {
-        max-height: 300px; /* Reduce la altura en pantallas más pequeñas */
     }
 }
