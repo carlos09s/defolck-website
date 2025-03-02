@@ -18,10 +18,14 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #121212;
+    background-image: url('ERF07459.jpg'); /* Agrega la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
+/* Para asegurar que el contenido del header (logo y menú) no cambie de posición */
 header .logo img {
     height: 60px;
 }
