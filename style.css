@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #121212;
     color: white;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal innecesario */
 }
 
 /* Header */
@@ -13,8 +14,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative;
-    z-index: 10;
+    position: fixed; /* Fijar el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 header .logo img {
@@ -42,13 +47,12 @@ nav ul li a:hover {
     color: #8B0000;
 }
 
-/* Foto horizontal (eliminada en el código HTML) */
-
 /* Sección de biografía */
 .biography {
     background-color: #8B0000;
     padding: 50px 20px;
     text-align: center;
+    margin-top: 100px; /* Da espacio suficiente para el header fijo */
 }
 
 .biography h2 {
