@@ -69,7 +69,7 @@ nav ul li a:hover {
     background-color: #000000;
     padding: 50px 20px;
     text-align: center;
-    margin-top: 100px; /* Da espacio suficiente para el header fijo */
+    margin-top: 0px; /* Da espacio suficiente para el header fijo */
 }
 
 .biography h2 {
