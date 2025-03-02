@@ -55,6 +55,7 @@ nav ul li a:hover {
 #home {
     width: 100%;
     height: auto;
+    margin-bottom: 0; /* Elimina el espacio entre la imagen y la siguiente sección */
 }
 
 #home img {
@@ -69,7 +70,7 @@ nav ul li a:hover {
     background-color: #000000;
     padding: 50px 20px;
     text-align: center;
-    margin-top: 100px; /* Da espacio suficiente para el header fijo */
+    margin-top: 0; /* Elimina el margen superior para evitar el espacio vacío */
     margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
 
