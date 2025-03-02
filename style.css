@@ -20,8 +20,7 @@ header {
 
 /* Estilo para el logo */
 header .logo img {
-    width: 200px; /* Ajusta el tamaño del logo si es necesario */
-    height: auto; /* Mantiene las proporciones del logo */ 
+    width: 300px; /* Ajusta el tamaño del logo si es necesario */
 }
 
 /* Estilo para la barra de navegación */
