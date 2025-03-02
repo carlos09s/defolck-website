@@ -7,51 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Contenedor del logo -->
-    <div class="logo-container">
-        <img src="Logoblanco.png" alt="Logo de DEFOLCK">
-    </div>
-
-    <!-- Agrega más contenido de tu página aquí si es necesario -->
-
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEFOLCK</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Encabezado o sección de bienvenida -->
+    <!-- Header -->
     <header>
-        <h1>Bienvenidos a DEFOLCK</h1>
-        <p>¡Disfruta de nuestra música y novedades!</p>
+        <div class="logo">
+            <img src="logo.png" alt="DEFOLCK">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#music">Música</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Contenedor del logo -->
-    <div class="logo-container">
-        <img src="Logoblanco.png" alt="Logo de DEFOLCK">
-    </div>
-
-    <!-- Sección de contenido o información de la banda -->
-    <section class="band-info">
-        <h2>Sobre DEFOLCK</h2>
-        <p>DEFOLCK es una banda dedicada a crear música única y experimental, combinando sonidos tradicionales con nuevos géneros.</p>
+    <!-- Sección de presentación -->
+    <section id="home" class="intro">
+        <h1>Bienvenidos a DEFOLCK</h1>
+        <p>Explora nuestra música, próximos eventos y más sobre la banda.</p>
     </section>
 
-    <!-- Sección de redes sociales -->
-    <section class="social-media">
-        <h2>Síguenos</h2>
+    <!-- Galería de imágenes -->
+    <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <div class="images">
+            <img src="image1.jpg" alt="Imagen 1">
+            <img src="image2.jpg" alt="Imagen 2">
+            <img src="image3.jpg" alt="Imagen 3">
+        </div>
+    </section>
+
+    <!-- Música -->
+    <section id="music" class="music">
+        <h2>Escucha nuestra música</h2>
         <ul>
-            <li><a href="https://facebook.com/defolck" target="_blank">Facebook</a></li>
-            <li><a href="https://instagram.com/defolck" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com/defolck" target="_blank">Twitter</a></li>
+            <li><a href="#">Canción 1</a></li>
+            <li><a href="#">Canción 2</a></li>
+            <li><a href="#">Canción 3</a></li>
         </ul>
     </section>
+
+    <!-- Eventos -->
+    <section id="events" class="events">
+        <h2>Próximos eventos</h2>
+        <ul>
+            <li>Fecha 1 - Lugar 1</li>
+            <li>Fecha 2 - Lugar 2</li>
+            <li>Fecha 3 - Lugar 3</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DEFOLCK | Todos los derechos reservados</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
