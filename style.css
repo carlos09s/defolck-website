@@ -3,53 +3,41 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212; /* Fondo negro */
     color: white; /* Texto blanco */
-    display: flex;
 }
 
-/* Menú lateral */
-.side-menu {
-    width: 250px;
-    background-color: #121212; /* Fondo negro */
-    position: fixed;
-    height: 100%;
-    padding: 20px;
-    top: 0;
-    left: 0;
+/* Header */
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    background-color: #121212; /* Fondo negro */
+    padding: 20px;
 }
 
-.side-menu .logo img {
+header .logo img {
     width: 150px;
-    margin-bottom: 30px;
 }
 
-.side-menu ul {
+header nav ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
-.side-menu ul li {
-    margin: 20px 0;
+header nav ul li {
+    margin: 0 20px;
 }
 
-.side-menu ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.side-menu ul li a:hover {
+header nav ul li a:hover {
     color: #8B0000; /* Rojo oscuro al pasar el cursor */
-}
-
-/* Contenido principal */
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-    width: 100%;
 }
 
 /* Sección de presentación */
