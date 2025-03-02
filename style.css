@@ -13,14 +13,14 @@ body {
 
 /* Header */
 header {
-    background-image: url('ERF07459.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen en el header */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('ERF07459.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 300px; /* Ajusta la altura del header según lo necesites */
+    height: 60vh; /* Usa un porcentaje para que sea más flexible */
     text-align: center;
-    color: white; /* Asegúrate de que el texto sea visible sobre la imagen */
+    color: white;
     padding: 20px 0;
 }
 
@@ -57,11 +57,14 @@ header nav ul li a {
     margin-bottom: 0; /* Elimina el espacio entre la imagen y la siguiente sección */
 }
 
+#home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; /* Elimina el espacio entre la imagen y la siguiente sección */
+}
+
 #home img {
-    width: 100%; /* Hace que la imagen se ajuste al ancho de la página */
-    height: auto; /* Ajusta la altura de la imagen proporcionalmente */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
-    margin: 0; /* Elimina cualquier margen innecesario */
+    display: none; /* Elimina la imagen de la sección si ya la tienes como fondo en el header */
 }
 
 /* Biografía */
