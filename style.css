@@ -1,50 +1,80 @@
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
-}
-
-/* Header */
+/* Estilos del header */
 header {
     position: relative;
-    height: 600px; /* Ajusta la altura según necesites */
-    background-image: url('foto-horizontal.jpg'); /* Aquí va la imagen que deseas usar */
+    background-image: url('ERF07459.jpg');
     background-size: cover;
     background-position: center;
+    height: 500px; /* Ajusta la altura del header */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-header .logo {
+header .overlay {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad para el fondo */
 }
 
-header nav {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+header .logo img {
+    max-width: 200px; /* Ajusta el tamaño del logo */
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
+    list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 header nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 16px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-/*
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Foto horizontal después del header */
+#photo {
+    width: 100%;
+    text-align: center;
+}
+
+#photo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Resto de las secciones */
+.intro, .biography, .music, .events {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
