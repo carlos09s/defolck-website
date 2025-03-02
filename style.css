@@ -69,6 +69,7 @@ nav ul li a:hover {
 .biography {
     background-color: #000000;
     text-align: center;
+    padding: 20px;
     margin-top: 0; /* Elimina el margen superior para evitar el espacio vacío */
     margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
