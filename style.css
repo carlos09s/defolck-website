@@ -116,7 +116,10 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
+/* Footer */
+footer .logo img {
+    width: 100px; /* Tamaño similar al del header */
+}
 footer .social a {
     color: white;
     margin: 0 15px;
