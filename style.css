@@ -117,22 +117,8 @@ footer {
     text-align: center;
 }
 
-footer .logo img {
-    width: 100px; /* Tamaño similar al del header */
-}
 footer .social a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-}
-/* Logo centrado en el footer */
-footer .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-footer .logo img {
-    width: 150px; /* Ajusta el tamaño del logo */
 }
