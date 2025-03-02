@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     position: fixed; /* Fijar el header en la parte superior */
     top: 0;
     left: 0;
