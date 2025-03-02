@@ -57,7 +57,7 @@ nav ul li a:hover {
     background-color: #8B0000;
     padding: 50px 20px;
     text-align: center;
-    margin-top: 80px; /* Da espacio suficiente para el header fijo */
+    margin-top: 100px; /* Da espacio suficiente para el header fijo */
 }
 
 .biography h2 {
