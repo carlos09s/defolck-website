@@ -69,6 +69,20 @@ nav ul li a:hover {
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Imagen en lugar de la sección de presentación */
+#home {
+    width: 100%;
+    overflow: hidden;
+}
+
+#home img {
+    width: 100%; /* La imagen ocupará el 100% del ancho */
+    height: auto; /* Mantendrá la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    max-height: 500px; /* Ajusta la altura máxima para que no sea demasiado grande */
 }
 
 /* Música */
@@ -177,5 +191,10 @@ footer .social a:hover {
 
     footer {
         font-size: 14px;
+    }
+
+    /* Ajustes para la imagen en móviles */
+    #home img {
+        max-height: 300px; /* Reduce la altura en pantallas más pequeñas */
     }
 }
