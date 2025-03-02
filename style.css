@@ -1,44 +1,55 @@
-/* Resetear márgenes y paddings por defecto */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body y fuentes */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212; /* Fondo negro */
     color: white; /* Texto blanco */
+    display: flex;
 }
 
-/* Header */
-header {
-    background-color: #121212; /* Negro */
+/* Menú lateral */
+.side-menu {
+    width: 250px;
+    background-color: #121212; /* Fondo negro */
+    position: fixed;
+    height: 100%;
     padding: 20px;
-    color: white;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-header .logo img {
-    width: 100px;
+.side-menu .logo img {
+    width: 150px;
+    margin-bottom: 30px;
 }
 
-header nav ul {
+.side-menu ul {
     list-style-type: none;
-    display: flex;
+    padding: 0;
 }
 
-header nav ul li {
-    margin: 0 15px;
+.side-menu ul li {
+    margin: 20px 0;
 }
 
-header nav ul li a {
+.side-menu ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
+}
+
+.side-menu ul li a:hover {
+    color: #8B0000; /* Rojo oscuro al pasar el cursor */
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
 }
 
 /* Sección de presentación */
