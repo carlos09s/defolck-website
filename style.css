@@ -122,3 +122,31 @@ footer .social a {
     margin: 0 15px;
     text-decoration: none;
 }
+/* Estilos generales */
+body {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-end; /* Alinea el contenido al final (parte inferior) */
+    height: 100vh; /* Ocupa toda la pantalla */
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+}
+
+/* Imagen del logo */
+.logo-container img {
+    width: 200px; /* Ajusta el tamaño según prefieras */
+    max-width: 100%;
+}
