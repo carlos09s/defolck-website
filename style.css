@@ -13,8 +13,6 @@ body {
 
 /* Header */
 header {
-/* Estilo para el header con fondo de imagen */
-header {
     background-image: url('ERF07459.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen en el header */
