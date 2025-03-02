@@ -1,80 +1,166 @@
-/* Estilos del header */
-header {
-    position: relative;
-    background-image: url('ERF07459.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px; /* Ajusta la altura del header */
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Opacidad para el fondo */
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 header .logo img {
-    max-width: 200px; /* Ajusta el tamaño del logo */
+    height: 60px;
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+nav ul li {
+    margin-right: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #8B0000;
 }
 
-/* Foto horizontal después del header */
-#photo {
-    width: 100%;
-    text-align: center;
-}
+/* Foto horizontal (eliminada en el código HTML) */
 
-#photo img {
-    width: 100%;
-    height: auto;
-}
-
-/* Resto de las secciones */
-.intro, .biography, .music, .events {
+/* Sección de biografía */
+.biography {
+    background-color: #8B0000;
     padding: 50px 20px;
     text-align: center;
 }
 
-footer {
-    background-color: #121212;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.biography h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-footer .social a {
-    margin: 0 10px;
+.biography p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Música */
+.music {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.music h2 {
+    font-size: 36px;
+    color: #8B0000;
+}
+
+.music ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.music ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.music ul li a {
     color: white;
     text-decoration: none;
 }
 
+.music ul li a:hover {
+    color: #8B0000;
+}
+
+/* Eventos */
+.events {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 36px;
+    color: #8B0000;
+}
+
+.events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.events ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
 footer .social a:hover {
-    text-decoration: underline;
+    color: #8B0000;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo img {
+        height: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .biography, .music, .events {
+        padding: 30px 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
