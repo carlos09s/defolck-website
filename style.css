@@ -3,7 +3,7 @@
 
 /* General */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Cuerpo de texto usa Poppins */
     margin: 0;
     padding: 0;
     background-color: #121212;
@@ -44,7 +44,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif; /* Enlaces usan Bebas Neue */
 }
 
 nav ul li a:hover {
@@ -62,27 +62,13 @@ nav ul li a:hover {
 .biography h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif; /* Título de biografía usa Anton */
 }
 
 .biography p {
     font-size: 18px;
     line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify; /* Justificar el texto */
-}
-
-/* Imagen en lugar de la sección de presentación */
-#home {
-    width: 100%;
-    overflow: hidden;
-}
-
-#home img {
-    width: 100%; /* La imagen ocupará el 100% del ancho */
-    height: auto; /* Mantendrá la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
-    max-height: 500px; /* Ajusta la altura máxima para que no sea demasiado grande */
+    font-family: 'Poppins', sans-serif; /* Texto usa Poppins */
 }
 
 /* Música */
@@ -95,7 +81,7 @@ nav ul li a:hover {
 .music h2 {
     font-size: 36px;
     color: #8B0000;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif; /* Título de música usa Anton */
 }
 
 .music ul {
@@ -106,7 +92,7 @@ nav ul li a:hover {
 .music ul li {
     font-size: 18px;
     margin: 10px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Lista usa Poppins */
 }
 
 .music ul li a {
@@ -128,7 +114,7 @@ nav ul li a:hover {
 .events h2 {
     font-size: 36px;
     color: #8B0000;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif; /* Título de eventos usa Anton */
 }
 
 .events ul {
@@ -139,7 +125,7 @@ nav ul li a:hover {
 .events ul li {
     font-size: 18px;
     margin: 10px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Lista usa Poppins */
 }
 
 /* Footer */
@@ -158,7 +144,7 @@ footer .social a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif; /* Enlaces de footer usan Bebas Neue */
 }
 
 footer .social a:hover {
@@ -191,10 +177,5 @@ footer .social a:hover {
 
     footer {
         font-size: 14px;
-    }
-
-    /* Ajustes para la imagen en móviles */
-    #home img {
-        max-height: 300px; /* Reduce la altura en pantallas más pequeñas */
     }
 }
