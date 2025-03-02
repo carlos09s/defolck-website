@@ -66,20 +66,20 @@ nav ul li a:hover {
 
 /* Biografía */
 .biography {
-    background-color: #8B0000;
+    background-color: #000000;
     padding: 50px 20px;
     text-align: center;
     margin-top: 100px; /* Da espacio suficiente para el header fijo */
 }
 
 .biography h2 {
-    font-size: 36px;  /* Cambia el tamaño del título */
+    font-size: 35px;  /* Cambia el tamaño del título */
     margin-bottom: 20px;
     font-family: 'Anton', sans-serif;
 }
 
 .biography p {
-    font-size: 18px;  /* Cambia el tamaño del texto */
+    font-size: 12px;  /* Cambia el tamaño del texto */
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
 }
