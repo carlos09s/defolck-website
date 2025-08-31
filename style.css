@@ -1,34 +1,43 @@
-/* Resetear márgenes y paddings por defecto */
-* {
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body y fuentes */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Fondo negro */
-    color: white; /* Texto blanco */
+    background-color: #000000;
+    color: white;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal innecesario */
 }
 
 /* Header */
 header {
-    background-color: #8B0000; /* Rojo oscuro */
-    padding: 20px;
+    background-image: url('ERF07459.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh; /* Usa un porcentaje para que sea más flexible */
+    text-align: center;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
 }
 
+/* Estilo para el logo */
 header .logo img {
-    width: 100px;
+    width: 100%; /* O usa un tamaño fijo como 300px */
+    max-width: 300px; /* Establece un tamaño máximo */
+    height: auto; /* Mantiene la proporción */
 }
 
+/* Estilo para la barra de navegación */
 header nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
@@ -36,89 +45,156 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-size: 16px;
 }
 
-/* Sección de presentación */
-.intro {
+/* Sección de imagen horizontal (reemplazando presentación) */
+#home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; /* Elimina el espacio entre la imagen y la siguiente sección */
+}
+
+#home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; /* Elimina el espacio entre la imagen y la siguiente sección */
+}
+
+#home img {
+    display: none; /* Elimina la imagen de la sección si ya la tienes como fondo en el header */
+}
+
+/* Biografía */
+.biography {
+    background-color: #000000;
     text-align: center;
-    margin: 50px 0;
+    padding: 20px;
+    margin-top: 0; /* Elimina el margen superior para evitar el espacio vacío */
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
 }
 
-.intro h1 {
-    font-size: 2.5rem;
+.biography h2 {
+    font-size: 35px;  /* Cambia el tamaño del título */
     margin-bottom: 20px;
-    color: #8B0000; /* Rojo oscuro */
+    font-family: 'Anton', sans-serif;
 }
 
-.intro p {
-    font-size: 1.2rem;
-    color: #ccc; /* Gris claro */
+.biography p {
+    font-size: 12px;  /* Cambia el tamaño del texto */
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
-
-/* Galería */
-.gallery {
-    text-align: center;
-    margin: 50px 0;
-}
-
-.gallery .images {
-    display: flex;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 30%;
-    margin: 0 10px;
-}
-
 /* Música */
 .music {
-    background-color: #1e1e1e; /* Fondo gris oscuro */
-    padding: 40px 0;
+    padding: 50px 20px;
+    background-color: #000000;
     text-align: center;
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
+}
+
+.music h2 {
+    font-size: 36px;
+    color: #8B0000;
+    font-family: 'Anton', sans-serif;
 }
 
 .music ul {
     list-style-type: none;
+    padding: 0;
 }
 
-.music li {
+.music ul li {
+    font-size: 18px;
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.music a {
-    color: #8B0000; /* Rojo oscuro */
+.music ul li a {
+    color: white;
     text-decoration: none;
+}
+
+.music ul li a:hover {
+    color: #8B0000;
 }
 
 /* Eventos */
 .events {
+    padding: 50px 20px;
+    background-color: #000000;
     text-align: center;
-    margin: 50px 0;
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
+}
+
+.events h2 {
+    font-size: 36px;
+    color: #8B0000;
+    font-family: 'Anton', sans-serif;
 }
 
 .events ul {
     list-style-type: none;
+    padding: 0;
 }
 
-.events li {
-    font-size: 1.2rem;
+.events ul li {
+    font-size: 18px;
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Footer */
 footer {
-    background-color: #121212; /* Fondo negro */
-    color: white;
+    background-color: #000000;
     padding: 20px;
     text-align: center;
+    color: white;
+    margin: 0; /* Elimina el margen para evitar espacios vacíos */
+}
+
+footer .social {
+    margin-top: 10px;
 }
 
 footer .social a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+footer .social a:hover {
+    color: #8B0000;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo img {
+        height: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .biography, .music, .events {
+        padding: 30px 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
